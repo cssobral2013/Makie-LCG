@@ -420,50 +420,6 @@ const CollectionArchive = task.group(`collection-archive`, async (target, cid) =
 //////                  Root Tasks                   //////
 ///////////////////////////////////////////////////////////
 
-const Pages = task(`pages`, async target => {
-	const [sans, slab] = await target.need(GroupContents`iosevka`, GroupContents`iosevka-slab`);
-	await cp(`${DIST}/${sans}`, `pages/${sans}`);
-	await cp(`${DIST}/${slab}`, `pages/${slab}`);
-});
-
-const SampleImagesPre = task(`sample-images:pre`, async target => {
-	const [sans, slab] = await target.need(
-		GroupContents`iosevka`,
-		GroupContents`iosevka-slab`,
-		de`images`
-	);
-	await cp(`${DIST}/${sans}`, `snapshot/${sans}`);
-	await cp(`${DIST}/${slab}`, `snapshot/${slab}`);
-});
-const SnapShotCSS = file(`snapshot/index.css`, async target => {
-	await target.need(fu`snapshot/index.styl`);
-	await run(`npm`, `run`, `stylus`, `snapshot/index.styl`, `-c`);
-});
-const TakeSampleImages = task(`sample-images:take`, async target => {
-	await target.need(SampleImagesPre, SnapShotCSS);
-	await cd(`snapshot`).run("npx", "electron", "get-snap.js", ["--dir", "../images"]);
-});
-const ScreenShot = file.glob(`images/*.png`, async (target, { full }) => {
-	await target.need(TakeSampleImages);
-	await run("optipng", full);
-});
-
-const SampleImages = task(`sample-images`, async target => {
-	await target.need(TakeSampleImages);
-	await target.need(
-		ScreenShot`images/charvars.png`,
-		ScreenShot`images/download-options.png`,
-		ScreenShot`images/family.png`,
-		ScreenShot`images/languages.png`,
-		ScreenShot`images/ligations.png`,
-		ScreenShot`images/matrix.png`,
-		ScreenShot`images/preview-all.png`,
-		ScreenShot`images/stylesets.png`,
-		ScreenShot`images/variants.png`,
-		ScreenShot`images/weights.png`
-	);
-});
-
 const AllArchives = task(`all:archives`, async target => {
 	const [exportPlans, collectPlans] = await target.need(ExportPlans, CollectPlans);
 	await target.need(
@@ -477,10 +433,6 @@ phony(`clean`, async () => {
 	await rm(`dist`);
 	await rm(`release-archives`);
 	build.deleteJournal(); // Disable journal
-});
-phony(`release`, async target => {
-	await target.need(AllArchives);
-	await target.need(SampleImages, Pages);
 });
 
 ///////////////////////////////////////////////////////////
