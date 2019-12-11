@@ -1,6 +1,6 @@
 {
-	"name": "iosevkaw",
-	"version": "2.3.3",
+	"name": "makie-lcg",
+	"version": "0.1.0",
 	"main": "./generate.js",
 	"engines": {
 		"node": ">=8.4.0"
