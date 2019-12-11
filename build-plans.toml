@@ -2,27 +2,46 @@
 # Sans
 [buildPlans.lcg-code]
 family = "Maki-e LCG Code"
+design = ["shape-straight-bar"]
+
+[buildPlans.lcg-code.post]
+design = ['wd-makie']
 
 [buildPlans.lcg-term]
 family = "Maki-e LCG Term"
-design = ["term"]
+design = ["shape-straight-bar", "term"]
+
+[buildPlans.lcg-term.post]
+design = ['wd-makie']
 
 [buildPlans.lcg-type]
 family = "Maki-e LCG Type"
-design = ["type"]
+design = ["shape-straight-bar", "type"]
+
+[buildPlans.lcg-type.post]
+design = ['wd-makie']
 
 # Slab
 [buildPlans.lcg-codeslab]
 family = "Maki-e LCG Code Slab"
-design = ["slab"]
+design = ["shape-straight-bar", "slab"]
+
+[buildPlans.lcg-codeslab.post]
+design = ['wd-makie']
 
 [buildPlans.lcg-termslab]
 family = "Maki-e LCG Term Slab"
-design = ["term", "slab"]
+design = ["shape-straight-bar", "term", "slab"]
+
+[buildPlans.lcg-termslab.post]
+design = ['wd-makie']
 
 [buildPlans.lcg-typeslab]
 family = "Maki-e LCG Type Slab"
-design = ["type", "slab"]
+design = ["shape-straight-bar", "type", "slab"]
+
+[buildPlans.lcg-typeslab.post]
+design = ['wd-makie']
 
 # Export plans
 # This mapping affects the process of creating ZIP archives only

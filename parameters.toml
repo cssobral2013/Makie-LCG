@@ -7,7 +7,7 @@ description = 'Spatial efficient monospace font family for programming. Built fr
 
 leading = 1250     # Default line height times 1000.
 descenderPad = 0   # Additional line height, added to descender.
-width = 600        # Character width. ＷＩＤＥＮＥＤ
+width = 500        # Character width.
 cap = 735          # Cap height (as well as ascender).
 xheight = 530      # X-height.
 #descender = -205  # Depth of descender. Currently unused.
@@ -25,13 +25,13 @@ essx = 1.12        # Contrast of the middle of 'S'.
 slantAngle = 0     # Slant angle, in degrees.
 
 accent = 155       # Height of accent marks.
-accentx = 240      # Width of accent marks. ＷＩＤＥＮＥＤ
+accentx = 200      # Width of accent marks.
 overshoot = -8     # Vertical overshoot for arcs.
 overshootx = -8    # Horizontal overshoot for arcs.
 oxhook = -5        # Horizontal overshoot for hook tips.
 fovershoot = -40   # Overshoot of the top end of italic `f`.
 
-longjut = 210      # Length of long serifs, like that in `i`. ＷＩＤＥＮＥＤ
+longjut = 175      # Length of long serifs, like that in `i`.
 jut = 85           # Length of short serifs, used in Slab only.
 vjut = 145         # Length of vertical serifs, used in Slab only.
 
@@ -257,6 +257,13 @@ inherits = ['wd-extended']
 
 [menu-subfamily-extended]
 menuWidth = 7
+
+# Maki-e’s metrics
+[wd-makie.multiplies]
+width = 1.2
+accentx = 1.2
+longjut = 1.28
+sb = 1.36
 
 # Compressed : And someone else want it being narrower
 [wd-condensed.multiplies]
