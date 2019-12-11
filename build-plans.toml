@@ -1,69 +1,36 @@
 # Building plans
 # Sans
-[buildPlans.iosevkaW]
-family = "Iosevka W"
+[buildPlans.lcg-code]
+family = "Maki-e LCG Code"
 
-[buildPlans.iosevkaW-term]
-family = "Iosevka W Term"
+[buildPlans.lcg-term]
+family = "Maki-e LCG Term"
 design = ["term"]
 
-[buildPlans.iosevkaW-type]
-family = "Iosevka W Type"
+[buildPlans.lcg-type]
+family = "Maki-e LCG Type"
 design = ["type"]
 
-[buildPlans.iosevkaW-term-lig]
-family = "Iosevka W TermLig"
-design = ["termlig"]
-
-[buildPlans.iosevkaW-cc]
-family = "IosevkaCC W"
-design = ["cc"]
-
 # Slab
-[buildPlans.iosevkaW-slab]
-family = "Iosevka W Slab"
+[buildPlans.lcg-codeslab]
+family = "Maki-e LCG Code Slab"
 design = ["slab"]
 
-[buildPlans.iosevkaW-term-slab]
-family = "Iosevka W Term Slab"
+[buildPlans.lcg-termslab]
+family = "Maki-e LCG Term Slab"
 design = ["term", "slab"]
 
-[buildPlans.iosevkaW-type-slab]
-family = "Iosevka W Type Slab"
+[buildPlans.lcg-typeslab]
+family = "Maki-e LCG Type Slab"
 design = ["type", "slab"]
-
-[buildPlans.iosevkaW-term-lig-slab]
-family = "Iosevka W TermLig Slab"
-design = ["termlig", "slab"]
-
-[buildPlans.iosevkaW-cc-slab]
-family = "IosevkaCC W Slab"
-design = ["cc", "slab"]
 
 # Export plans
 # This mapping affects the process of creating ZIP archives only
 [exportPlans]
-01-iosevkaW = "iosevkaW"
-02-iosevkaW-term = "iosevkaW-term"
-03-iosevkaW-slab = "iosevkaW-slab"
-04-iosevkaW-term-slab = "iosevkaW-term-slab"
-
-# TTC collection plans
-# [collectPlans.iosevkaW]
-# from = [
-# 	"iosevkaW",
-# 	"iosevkaW-term",
-# 	"iosevkaW-type",
-# 	"iosevkaW-cc"
-# ]
-
-# [collectPlans.iosevkaW-slab]
-# from = [
-# 	"iosevkaW-slab",
-# 	"iosevkaW-term-slab",
-# 	"iosevkaW-type-slab",
-# 	"iosevkaW-cc-slab"
-# ]
+01-lcg-code = "lcg-code"
+02-lcg-term = "lcg-term"
+03-lcg-codeslab = "lcg-codeslab"
+04-lcg-termslab = "lcg-termslab"
 
 # Weight mappings (style => shape weight, CSS weight)
 #   Shape weight : affects the shape of the glyphs
