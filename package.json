@@ -1,6 +1,6 @@
 {
 	"name": "makie-lcg",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"main": "./generate.js",
 	"engines": {
 		"node": ">=8.4.0"

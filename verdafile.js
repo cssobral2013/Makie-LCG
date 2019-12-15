@@ -310,7 +310,7 @@ const DistTTC = file.make(
 			"-o",
 			full,
 			"-h",
-			"--common-width=500"
+			"--common-width=600"
 		);
 	}
 );

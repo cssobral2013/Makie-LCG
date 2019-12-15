@@ -7,11 +7,11 @@ design = ["shape-straight-bar"]
 [buildPlans.lcg-code.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-term]
-family = "Maki-e LCG Term"
-design = ["shape-straight-bar", "term"]
+[buildPlans.lcg-konqi]
+family = "Maki-e LCG Konqi"
+design = ["shape-straight-bar", "termlig"]
 
-[buildPlans.lcg-term.post]
+[buildPlans.lcg-konqi.post]
 design = ['wd-makie']
 
 [buildPlans.lcg-type]
@@ -19,6 +19,27 @@ family = "Maki-e LCG Type"
 design = ["shape-straight-bar", "type"]
 
 [buildPlans.lcg-type.post]
+design = ['wd-makie']
+
+[buildPlans.lcg-cc]
+family = "Maki-e LCG CC"
+design = ["shape-straight-bar", "cc"]
+
+[buildPlans.lcg-cc.post]
+design = ['wd-makie']
+
+[buildPlans.lcg-mono]
+family = "Maki-e LCG Mono"
+design = ["shape-straight-bar", "no-ligation"]
+
+[buildPlans.lcg-mono.post]
+design = ['wd-makie']
+
+[buildPlans.lcg-term]
+family = "Maki-e LCG Term"
+design = ["shape-straight-bar", "term"]
+
+[buildPlans.lcg-term.post]
 design = ['wd-makie']
 
 # Slab
@@ -29,11 +50,11 @@ design = ["shape-straight-bar", "slab"]
 [buildPlans.lcg-codeslab.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-termslab]
-family = "Maki-e LCG Term Slab"
-design = ["shape-straight-bar", "term", "slab"]
+[buildPlans.lcg-konqislab]
+family = "Maki-e LCG Konqi Slab"
+design = ["shape-straight-bar", "termlig", "slab"]
 
-[buildPlans.lcg-termslab.post]
+[buildPlans.lcg-konqislab.post]
 design = ['wd-makie']
 
 [buildPlans.lcg-typeslab]
@@ -43,13 +64,42 @@ design = ["shape-straight-bar", "type", "slab"]
 [buildPlans.lcg-typeslab.post]
 design = ['wd-makie']
 
+[buildPlans.lcg-ccslab]
+family = "Maki-e LCG CC"
+design = ["shape-straight-bar", "cc", "slab"]
+
+[buildPlans.lcg-ccslab.post]
+design = ['wd-makie']
+
+[buildPlans.lcg-monoslab]
+family = "Maki-e LCG Mono"
+design = ["shape-straight-bar", "no-ligation", "slab"]
+
+[buildPlans.lcg-monoslab.post]
+design = ['wd-makie']
+
+[buildPlans.lcg-termslab]
+family = "Maki-e LCG Term Slab"
+design = ["shape-straight-bar", "term", "slab"]
+
+[buildPlans.lcg-termslab.post]
+design = ['wd-makie']
+
 # Export plans
 # This mapping affects the process of creating ZIP archives only
 [exportPlans]
 01-lcg-code = "lcg-code"
-02-lcg-term = "lcg-term"
-03-lcg-codeslab = "lcg-codeslab"
-04-lcg-termslab = "lcg-termslab"
+02-lcg-konqi = "lcg-konqi"
+03-lcg-type = "lcg-type"
+04-lcg-cc = "lcg-cc"
+05-lcg-mono = "lcg-mono"
+06-lcg-term = "lcg-term"
+07-lcg-codeslab = "lcg-codeslab"
+08-lcg-konqislab = "lcg-konqislab"
+09-lcg-typeslab = "lcg-typeslab"
+10-lcg-ccslab = "lcg-ccslab"
+11-lcg-monoslab = "lcg-monoslab"
+12-lcg-termslab = "lcg-termslab"
 
 # Weight mappings (style => shape weight, CSS weight)
 #   Shape weight : affects the shape of the glyphs
