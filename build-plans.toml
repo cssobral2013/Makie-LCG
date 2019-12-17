@@ -1,105 +1,105 @@
 # Building plans
 # Sans
-[buildPlans.lcg-code]
-family = "Maki-e LCG Code"
+[buildPlans.lcg-sans-code]
+family = "Maki-e Sans Code LCG"
 design = ["shape-straight-bar"]
 
-[buildPlans.lcg-code.post]
+[buildPlans.lcg-sans-code.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-konqi]
-family = "Maki-e LCG Konqi"
+[buildPlans.lcg-sans-konqi]
+family = "Maki-e Sans Konqi LCG"
 design = ["shape-straight-bar", "termlig"]
 
-[buildPlans.lcg-konqi.post]
+[buildPlans.lcg-sans-konqi.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-type]
-family = "Maki-e LCG Type"
+[buildPlans.lcg-sans-type]
+family = "Maki-e Sans Type LCG"
 design = ["shape-straight-bar", "type"]
 
-[buildPlans.lcg-type.post]
+[buildPlans.lcg-sans-type.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-cc]
-family = "Maki-e LCG CC"
+[buildPlans.lcg-sans-cc]
+family = "Maki-e Sans CC LCG"
 design = ["shape-straight-bar", "cc"]
 
-[buildPlans.lcg-cc.post]
+[buildPlans.lcg-sans-cc.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-mono]
-family = "Maki-e LCG Mono"
+[buildPlans.lcg-sans-mono]
+family = "Maki-e Sans Mono LCG"
 design = ["shape-straight-bar", "no-ligation"]
 
-[buildPlans.lcg-mono.post]
+[buildPlans.lcg-sans-mono.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-term]
-family = "Maki-e LCG Term"
+[buildPlans.lcg-sans-term]
+family = "Maki-e Sans Term LCG"
 design = ["shape-straight-bar", "term"]
 
-[buildPlans.lcg-term.post]
+[buildPlans.lcg-sans-term.post]
 design = ['wd-makie']
 
 # Slab
-[buildPlans.lcg-codeslab]
-family = "Maki-e LCG Code Slab"
+[buildPlans.lcg-slab-code]
+family = "Maki-e Slab Code LCG"
 design = ["shape-straight-bar", "slab"]
 
-[buildPlans.lcg-codeslab.post]
+[buildPlans.lcg-slab-code.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-konqislab]
-family = "Maki-e LCG Konqi Slab"
+[buildPlans.lcg-slab-konqi]
+family = "Maki-e Slab Konqi LCG"
 design = ["shape-straight-bar", "termlig", "slab"]
 
-[buildPlans.lcg-konqislab.post]
+[buildPlans.lcg-slab-konqi.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-typeslab]
-family = "Maki-e LCG Type Slab"
+[buildPlans.lcg-slab-type]
+family = "Maki-e Slab Type LCG"
 design = ["shape-straight-bar", "type", "slab"]
 
-[buildPlans.lcg-typeslab.post]
+[buildPlans.lcg-slab-type.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-ccslab]
-family = "Maki-e LCG CC"
+[buildPlans.lcg-slab-cc]
+family = "Maki-e Slab CC LCG"
 design = ["shape-straight-bar", "cc", "slab"]
 
-[buildPlans.lcg-ccslab.post]
+[buildPlans.lcg-slab-cc.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-monoslab]
-family = "Maki-e LCG Mono"
+[buildPlans.lcg-slab-mono]
+family = "Maki-e Slab Mono LCG"
 design = ["shape-straight-bar", "no-ligation", "slab"]
 
-[buildPlans.lcg-monoslab.post]
+[buildPlans.lcg-slab-mono.post]
 design = ['wd-makie']
 
-[buildPlans.lcg-termslab]
-family = "Maki-e LCG Term Slab"
+[buildPlans.lcg-slab-term]
+family = "Maki-e Slab Term LCG"
 design = ["shape-straight-bar", "term", "slab"]
 
-[buildPlans.lcg-termslab.post]
+[buildPlans.lcg-slab-term.post]
 design = ['wd-makie']
 
 # Export plans
 # This mapping affects the process of creating ZIP archives only
 [exportPlans]
-01-lcg-code = "lcg-code"
-02-lcg-konqi = "lcg-konqi"
-03-lcg-type = "lcg-type"
-04-lcg-cc = "lcg-cc"
-05-lcg-mono = "lcg-mono"
-06-lcg-term = "lcg-term"
-07-lcg-codeslab = "lcg-codeslab"
-08-lcg-konqislab = "lcg-konqislab"
-09-lcg-typeslab = "lcg-typeslab"
-10-lcg-ccslab = "lcg-ccslab"
-11-lcg-monoslab = "lcg-monoslab"
-12-lcg-termslab = "lcg-termslab"
+01-lcg-sans-code = "lcg-sans-code"
+02-lcg-sans-konqi = "lcg-sans-konqi"
+03-lcg-sans-type = "lcg-sans-type"
+04-lcg-sans-cc = "lcg-sans-cc"
+05-lcg-sans-mono = "lcg-sans-mono"
+06-lcg-sans-term = "lcg-sans-term"
+07-lcg-slab-code = "lcg-slab-code"
+08-lcg-slab-konqi = "lcg-slab-konqi"
+09-lcg-slab-type = "lcg-slab-type"
+10-lcg-slab-cc = "lcg-slab-cc"
+11-lcg-slab-mono = "lcg-slab-mono"
+12-lcg-slab-term = "lcg-slab-term"
 
 # Weight mappings (style => shape weight, CSS weight)
 #   Shape weight : affects the shape of the glyphs
