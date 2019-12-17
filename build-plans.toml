@@ -45,42 +45,42 @@ design = ['wd-makie']
 # Slab
 [buildPlans.lcg-slab-code]
 family = "Maki-e Slab Code LCG"
-design = ["shape-straight-bar", "slab"]
+design = ["slab"]
 
 [buildPlans.lcg-slab-code.post]
 design = ['wd-makie']
 
 [buildPlans.lcg-slab-konqi]
 family = "Maki-e Slab Konqi LCG"
-design = ["shape-straight-bar", "termlig", "slab"]
+design = ["termlig", "slab"]
 
 [buildPlans.lcg-slab-konqi.post]
 design = ['wd-makie']
 
 [buildPlans.lcg-slab-type]
 family = "Maki-e Slab Type LCG"
-design = ["shape-straight-bar", "type", "slab"]
+design = ["type", "slab"]
 
 [buildPlans.lcg-slab-type.post]
 design = ['wd-makie']
 
 [buildPlans.lcg-slab-cc]
 family = "Maki-e Slab CC LCG"
-design = ["shape-straight-bar", "cc", "slab"]
+design = ["cc", "slab"]
 
 [buildPlans.lcg-slab-cc.post]
 design = ['wd-makie']
 
 [buildPlans.lcg-slab-mono]
 family = "Maki-e Slab Mono LCG"
-design = ["shape-straight-bar", "no-ligation", "slab"]
+design = ["no-ligation", "slab"]
 
 [buildPlans.lcg-slab-mono.post]
 design = ['wd-makie']
 
 [buildPlans.lcg-slab-term]
 family = "Maki-e Slab Term LCG"
-design = ["shape-straight-bar", "term", "slab"]
+design = ["term", "slab"]
 
 [buildPlans.lcg-slab-term.post]
 design = ['wd-makie']
